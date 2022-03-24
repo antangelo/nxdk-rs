@@ -1,0 +1,10 @@
+[package]
+name = "nxdk-sys"
+version = "0.1.0"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.59.2"
+
+[dependencies]
+libc = "0.2.119"

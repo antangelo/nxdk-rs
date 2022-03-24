@@ -1,0 +1,14 @@
+[package]
+name = "nxdk-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nxdk-sys = { path = "nxdk-sys" }
+libc = "0.2.119"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

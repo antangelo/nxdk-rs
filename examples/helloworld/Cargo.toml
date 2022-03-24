@@ -1,0 +1,17 @@
+[package]
+name = "rust"
+version = "0.1.0"
+resolver = "2"
+
+[build-dependencies]
+
+[dependencies]
+nxdk-rs = { path = "../.." }
+libc = "0.2.119"
+cstr_core = "0.2.5"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
