@@ -6,6 +6,9 @@
 
 use core::panic::PanicInfo;
 
+#[macro_use]
+extern crate alloc;
+
 #[global_allocator]
 static ALLOCATOR: nxdk_rs::alloc::XboxKernelAlloc = nxdk_rs::alloc::XboxKernelAlloc {};
 
@@ -16,12 +19,10 @@ fn alloc_error_handler(layout: core::alloc::Layout) -> ! {
 
 #[no_mangle]
 pub extern "C" fn main() -> ! {
-    let msg = cstr_core::CString::new("Hello from Rust!\n").expect("Unable to alloc string");
+    let msg = format!("Hello from {}!", "Rust");
 
-    unsafe {
-        nxdk_rs::sys::hal::video::XVideoSetMode(640, 480, 32, 0);
-        nxdk_rs::sys::hal::debug::debugPrint(msg.as_ptr() as *const libc::c_char);
-    }
+    nxdk_rs::hal::video::xvideo_set_mode(640, 480, 32, nxdk_rs::hal::video::RefreshRate::Default);
+    nxdk_rs::hal::debug::debug_print_str(&msg);
 
     loop {}
 }
