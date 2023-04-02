@@ -27,5 +27,6 @@
     "requires-uwtable": true,
     "target-pointer-width": "32",
     "target-family": "windows",
-    "vendor": "pc"
+    "vendor": "pc",
+    "emit-debug-gdb-scripts": false
   }
