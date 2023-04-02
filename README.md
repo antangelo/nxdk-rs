@@ -26,7 +26,7 @@ Ensure that you follow the nxdk installation instructions. In particular, you'll
 ./nxdk/bin/activate
 ```
 
-This is all that is needed to use nxdk-rs. At this point, you can build one of the nxdk-rs samples:
+At this point, you can build one of the nxdk-rs samples:
 
 ```sh
 cd nxdk-rs/examples/helloworld
