@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-License-Identifier: MIT
 
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]

@@ -43,13 +43,7 @@ xemu -dvd_path bin.iso
 
 ## License
 
-As these are primarily bindings, they'll be licensed under the same license as the underlying nxdk component:
+This project (bindings and examples) uses the MIT license.
 
-- OpenXDK (hal) under GPLv2
-- pbkit under MIT
-- pdclib under CC0
-- LLVM compiler-rt under MIT
-
-Code that is unrelated to nxdk libraries themselves is licensed under MIT (this is primarily the `i386-xbox-win32.json` target triple and memory allocator).
-
-If the nxdk licenses are changed (which has happened recently), I intend to relicense parts of nxdk-rs accordingly. Please keep this in mind if you are making contributions.
+Do note that licenses for any nxdk module(s) that are used are also applicable. Under the current build system, all
+nxdk libraries are statically linked, meaning that all associated licenses will apply to the final binary.

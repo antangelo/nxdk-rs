@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0-only
+// SPDX-License-Identifier: MIT
 
 pub fn debug_print_cstr(msg: &cstr_core::CStr) {
     unsafe {

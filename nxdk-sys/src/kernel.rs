@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: CC0-1.0
+// SPDX-License-Identifier: MIT
 
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
